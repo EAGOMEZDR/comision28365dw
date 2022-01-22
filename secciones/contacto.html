@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Juridico Gomez & Torino</title>
+    <link rel="shortcut icon" href="../imagenes/pestaña.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a class="logo__link" href="../index.html">
+                <img class="logo__img" src="../imagenes/balanza.png" alt="balanzalogo">
+            </a>
+        </div>
+        
+        <div class="titulos">
+            <h1 class="titulos__h1"> GOMEZ & TORINO</h1>
+            <h2 class="titulos_h2">Estudio juridico integral</h2>
+            <h4 class="titulos_h4b">CIVIL - PENAL - LABORAL - ADMINISTRATIVO</h4>
+        </div>
+
+        <nav class="barraNav">
+            <ul class="barraNav__ul">
+                <li class="barraNav__li">
+                    <a href="../index.html" >Inicio</a>
+                </li>
+                <li li class="barraNav__li">
+                    <a href="../secciones/servicios.html">Nuestros servicios</a>
+                </li>
+                <li li class="barraNav__li">
+                    <a href="../secciones/nosotros.html">Sobre nosotros</a>
+                </li>
+                <li li class="barraNav__li">
+                    <a href="../secciones/links.html">Links útiles</a>
+                </li>
+                <li li class="barraNav__li">
+                    <a href="../secciones/contacto.html">Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="barraNavRes">
+            <ul class="barraNavRes__ul">
+                <li class="barraNavRes__li">
+                    <a href="../index.html"><img class=" barraNavRes__li--ico" src="../imagenes/home-page.png" alt="Home"></a>
+                </li>
+                <li class="barraNavRes__li">
+                    <a href="../secciones/servicios.html">
+                        <img class=" barraNavRes__li--ico" src="../imagenes/support.png" alt="Servicios">
+                    </a>
+                </li>
+                <li class="barraNavRes__li">
+                    <a href="../secciones/nosotros.html">
+                        <img class=" barraNavRes__li--ico" src="../imagenes/group.png" alt="Nosotros">
+                    </a>
+                </li>
+                <li class="barraNavRes__li">
+                    <a href="../secciones/contacto.html">
+                        <img class=" barraNavRes__li--ico" src="../imagenes/phone-receiver-silhouette.png" alt="Contacto">
+                    </a>
+                </li>
+                <li class="barraNavRes__li">
+                    <a href="../secciones/links.html">
+                        <img class=" barraNavRes__li--ico" src="../imagenes/chain-links.png" alt="Links utiles">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        
+    </header>
+    
+
+    <main  class="mainContacto">
+        <section class="mainContacto__section">
+            <h3 class="mainContacto__h3">DEJE SU CONSULTA</h3>
+
+            <form class="mainContacto__form">
+                <!-- Ingreso de datos -->
+                <label for="name">Ingrese su nombre</label>
+                <input type="text" name="name"> <br>
+
+                <label for="email">Ingrese su e-mail</label>
+                <input type="text" placeholder="aaaa@gmail.com" name="email"><br>   
+            
+                <label for="password">Ingrese su Contraseña</label>
+                <input name="usuario" type="password" id="password"/><br>
+
+                <!-- Menu desplegable -->
+                <div>Seleccione su provincia</div>
+                <select name="provincia" >
+                    <option value="caba">C.A.B.A.</option>
+                    <option value="pba">Buenos Aires</option>
+                </select><br>
+
+                <!-- Area de texto de consulta -->
+
+                <label for="consulta">Escriba su consulta: 
+                    <textarea> </textarea>
+                </label><br>
+
+                <!-- Menu de Fuero -->
+
+                <div>Seleccione el Fuero correspondiente a su consulta</div>
+                <div>PENAL</div>
+                    <input type="radio" name="fuero" value="Penal">
+                <div>CIVIL</div>
+                    <input type="radio" name="fuero" value="Civil">
+                <div>LABORAL</div>
+                    <input type="radio" name="fuero" value="Laboral">
+                <div>OTRO</div>
+                    <input type="radio" name="fuero" value="Otro">
+
+
+                <!-- Check box derechos-->
+
+                <div>Comprendo que el tratamiento de la consulta de ninguna manera implica la aceptacion de la defensa.</div>
+                <input type="checkbox" name="Acepto">
+
+                <!-- Boton de acepto -->
+                <div>Boton</div>
+                    <input type="submit" value= "Enviar">
+                    <input type="reset"  value= "Cancelar">
+                    <input type="button" value="Non Action"/>
+            </form>
+        
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="datos">
+            <h3 class="datos__h3"> Datos de contacto</h3>
+            <ul class="datos__ul">
+                <li class="datos__li">Uruguay 9999, Ciudad Autónoma de Buenos Aires</li>
+                <li class="datos__li">Telefono: 11-5999-999</li>
+                <li class="datos__li">Whatsapp: 11-5999-999</li>
+                <li class="datos__li">Emergencias (24hs): 9999-9999</li>
+            </ul>
+            <h5 class="datos__h5">Atendemos emergencias penales las 24 hs del dia los 365 dias del año.</h5>
+        </div>
+
+        <article class="redesSociales">
+            <p class="redesSociales__p">Seguinos en nuestras redes</p>
+            <ul class="redesSociales__ul">
+                <li class="redesSociales__li">
+                    <a href="https://www.facebook.com">
+                        <img src="../imagenes/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li class="redesSociales__li">
+                    <a href="https://www.twitter.com">
+                        <img src="../imagenes/twitter.png" alt="twitter">
+                    </a>
+                </li>
+                <li class="redesSociales__li">
+                    <a href="https://instagram.com">
+                        <img src="../imagenes/instagram.png" alt="instagram">
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+
+    </footer>
+</body>
+</html>
