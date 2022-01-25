@@ -486,6 +486,26 @@ p{
         grid-area: nav;
     }
 
+    .barraNav__li a{
+        transition: background-color 3s;
+    }
+
+    .barraNav__li a:hover{
+        background-color: aquamarine;
+        animation-name: border;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes border{
+        0% { border:.2vh solid black}
+        25% { border:.23vh solid black}
+        50% { border:.35vh solid black}
+        75% { border:.47vh solid black}
+        90% { border:.59vh solid black}
+        100% { border:.61vh solid black}
+    }
+
 
     footer{
         display: grid;
@@ -543,6 +563,26 @@ p{
         grid-area: nav;
     }
 
+    .barraNav__li a{
+        transition: background-color 3s;
+    }
+
+    .barraNav__li a:hover{
+        background-color: aquamarine;
+        animation-name: border;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes border{
+        0% { border:.2vh solid black}
+        25% { border:.23vh solid black}
+        50% { border:.35vh solid black}
+        75% { border:.47vh solid black}
+        90% { border:.59vh solid black}
+        100% { border:.61vh solid black}
+    }
+
 
     footer{
         display: grid;
@@ -557,6 +597,16 @@ p{
        align-items: center;
        padding-top: 2vh;
    } 
+
+   .redesSociales__li img{
+       transition: width 2s;
+   }
+
+   .redesSociales__li img:hover{
+       width: 8vh;
+       height:auto;
+       
+   }
 
 
     .datos{
