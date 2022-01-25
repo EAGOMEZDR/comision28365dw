@@ -485,7 +485,16 @@ h1, h2, h3, h4, h5, h6, p{
 
     footer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "redes datos datos datos";
+    }
+
+   .redesSociales{
+       grid-area: redes;
+   } 
+
+    .datos{
+        grid-area: datos;
     }
 
 
