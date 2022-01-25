@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p{
+    margin: 0vh;
+}
+
 
 /* ----------------HEADER -------------- */
 
@@ -41,7 +45,7 @@ h1, h2, h3, h4, h5, h6, p{
     border: .6vh solid black;
     border-radius: 50%;
     height:auto;
-    width: 6vh;
+    width: 12vh;
     background-color: darkkhaki;
     transition: background-color 2s;
 }
@@ -205,7 +209,6 @@ h1, h2, h3, h4, h5, h6, p{
 
 .mainNosotros__p{
     text-align: justify;
-    padding:1.5vh;
     font-size: 2vh;
     padding:2vh;
 }
@@ -277,9 +280,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .redesSociales__li a img{
-    width: 4vh;
+    width: 6.5vh;
     height: auto;
-
+    margin:1vh;
+    padding: .5vh;
 }
 
 
@@ -451,7 +455,60 @@ h1, h2, h3, h4, h5, h6, p{
 
 }   
 
-@media only screen and (min-width:721px) and (max-width:5000px) {
+@media only screen and (min-width:721px) and (max-width:1200px) {
+
+
+    .barraNavRes{
+        display: none;
+    }
+
+    header{
+        display: grid;
+        grid-area: header;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr;
+        grid-template-areas: 
+        "logo"
+        "titulos"
+        "nav";
+   }
+
+    .logo{
+        grid-area: logo;
+    }
+
+    .titulos{
+        grid-area: titulos;
+  
+    }
+
+    .barraNav{
+        grid-area: nav;
+    }
+
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "redes datos datos datos";
+    }
+
+   .redesSociales{
+       grid-area: redes;
+       display:inline-flex;
+       flex-direction: column;
+       align-items: center;
+       padding-top: 2vh;
+   } 
+
+
+    .datos{
+        grid-area: datos;
+    }
+
+}
+
+@media only screen and (min-width:1201px) and (max-width:5000px) {
 
 
     .barraNavRes{
