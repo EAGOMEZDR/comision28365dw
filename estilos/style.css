@@ -489,21 +489,25 @@ p{
 
     footer{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "redes datos datos datos";
-    }
-
-   .redesSociales{
-       grid-area: redes;
-       display:inline-flex;
-       flex-direction: column;
-       align-items: center;
-       padding-top: 2vh;
-   } 
-
+        grid-area:footer;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr;
+        grid-template-areas: 
+        "datos"
+        "redes";
+    } 
 
     .datos{
         grid-area: datos;
+    }
+
+    .redesSociales{
+        grid-area:redes;
+        display:inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        padding:-2vh;
     }
 
 }
