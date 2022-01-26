@@ -77,58 +77,81 @@
     
 
     <main  class="mainContacto">
-        <section class="mainContacto__section">
-            <h3 class="mainContacto__h3">DEJE SU CONSULTA</h3>
-
-            <form class="mainContacto__form">
-                <!-- Ingreso de datos -->
-                <label for="name">Ingrese su nombre</label>
-                <input type="text" name="name"> <br>
-
-                <label for="email">Ingrese su e-mail</label>
-                <input type="text" placeholder="aaaa@gmail.com" name="email"><br>   
-            
-                <label for="password">Ingrese su Contraseña</label>
-                <input name="usuario" type="password" id="password"/><br>
-
-                <!-- Menu desplegable -->
-                <div>Seleccione su provincia</div>
-                <select name="provincia" >
-                    <option value="caba">C.A.B.A.</option>
-                    <option value="pba">Buenos Aires</option>
-                </select><br>
-
-                <!-- Area de texto de consulta -->
-
-                <label for="consulta">Escriba su consulta: 
-                    <textarea> </textarea>
-                </label><br>
-
-                <!-- Menu de Fuero -->
-
-                <div>Seleccione el Fuero correspondiente a su consulta</div>
-                <div>PENAL</div>
-                    <input type="radio" name="fuero" value="Penal">
-                <div>CIVIL</div>
-                    <input type="radio" name="fuero" value="Civil">
-                <div>LABORAL</div>
-                    <input type="radio" name="fuero" value="Laboral">
-                <div>OTRO</div>
-                    <input type="radio" name="fuero" value="Otro">
-
-
-                <!-- Check box derechos-->
-
-                <div>Comprendo que el tratamiento de la consulta de ninguna manera implica la aceptacion de la defensa.</div>
-                <input type="checkbox" name="Acepto">
-
-                <!-- Boton de acepto -->
-                <div>Boton</div>
-                    <input type="submit" value= "Enviar">
-                    <input type="reset"  value= "Cancelar">
-                    <input type="button" value="Non Action"/>
-            </form>
-        
+        <h2 class="mainContacto__h3">CONTACTENOS</h2>
+        <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Apellido completo</label>
+              <input type="text" class="form-control" id="validationDefault02" value="" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefaultUsername" class="form-label">Celular</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">+54-911</span>
+                <input type="text" placeholder=" Ingrese su numero sin 15" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Provincia</label>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>C.A.B.A.</option>
+                  <option>Buenos Aires</option>
+                </select>
+              </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">Ciudad/Barrio</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+                    <label for="floatingInputGrid">Ingrese su email</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                      <option selected>Seleccione una opcion</option>
+                      <option value="1">Penal</option>
+                      <option value="2">Civil</option>
+                      <option value="3">Laboral</option>
+                      <option value="4">Administrativo</option>
+                      <option value="3">Desconozco</option>
+                    </select>
+                    <label for="floatingSelectGrid">Seleccione fuero de consulta</label>
+                  </div>
+                </div>
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Ingrese su consulta</label>
+                <textarea placeholder="Escriba su consulta con el mayor detalle posible. En casos de trabajo irregular, accidentes de transito o imputaciones de delitos, mencione brevemente que prueba posee (testigos, contratos, poderes, recibos de sueldo, cheques, etc)." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+             
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Acepto los terminos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Acepto que el estudio se contacte al celular registrado precedentemente.
+                  </label>
+                </div>
+              </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar formulario</button>
+            </div>
+          </form>
 
 
         </section>
