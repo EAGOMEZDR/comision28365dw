@@ -265,7 +265,32 @@ p{
     text-align: center;
 }
 
+.botonRed {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+}
 
+.botonExtend { 
+    padding: 20vh;
+    margin:20vh;
+}
+
+.textoSolapa {
+    padding-bottom: 4vh;
+    text-align: justify;
+}
+
+.firma{
+    padding:1vh;
+    font-size: 1.8vh;
+}
+
+.contact{
+    text-decoration: underline;
+    font-weight: bold;
+    margin:0 auto;
+}
 /* ---------------FOOTER----------------- */
 
 .datos{
@@ -569,6 +594,7 @@ p{
 }
 
 @media only screen and (min-width:1201px) and (max-width:5000px) {
+
 
 
     .barraNavRes{
